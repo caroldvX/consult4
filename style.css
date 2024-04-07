@@ -1,0 +1,116 @@
+@keyframes gradientBackground {
+    0% {
+      background-color: #1167b1;
+      background-position: 0% 50%;
+    }
+    50% {
+      background-color: #08aeea;
+      background-position: 100% 50%;
+    }
+    100% {
+      background-color: #1167b1;
+      background-position: 0% 50%;
+    }
+  }
+  
+  body {
+    animation: gradientBackground 15s ease infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #43fdde;
+      text-align: center;
+  }
+  .container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  }
+  input, button {
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
+  }
+  button {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+  }
+  button:hover {
+      background-color: #0056b3;
+  }
+  input:focus, button:focus {
+      outline: none;
+      border-color: #007bff;
+  }
+  .resultado p {
+      margin: 5px 0;
+      padding: 0;
+      color: #333;
+  }
+  .loader {
+      border: 4px solid #f3f3f5; /* Cor do fundo */
+      border-radius: 50%;
+      border-top: 4px solid #28a745; /* Cor da animação - verde */
+      width: 30px;
+      height: 30px;
+      margin: auto; /* Centraliza o loader */
+      animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  
